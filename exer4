@@ -9,18 +9,11 @@ namespace exer
             Console.WriteLine("Digite o número de maçãs compradas:");
             int macas = int.Parse(Console.ReadLine());
 
-            double total;
+            double valorMenor12 = macas * 1.30;
+            double valorMaior12 = macas * 1.00;
 
-            if (macas < 12)
-            {
-                total = macas * 1.30;
-            }
-            else
-            {
-                total = macas * 1.00;
-            }
-
-            Console.WriteLine("O valor total da compra é: R$ " + total);
+            Console.WriteLine("Se forem menos de 12 maçãs, o valor é: R$ " + valorMenor12);
+            Console.WriteLine("Se forem 12 ou mais maçãs, o valor é: R$ " + valorMaior12);
         }
     }
 }
