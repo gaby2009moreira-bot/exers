@@ -1,0 +1,26 @@
+using System;
+
+namespace exer
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o número de maçãs compradas:");
+            int macas = int.Parse(Console.ReadLine());
+
+            double total;
+
+            if (macas < 12)
+            {
+                total = macas * 1.30;
+            }
+            else
+            {
+                total = macas * 1.00;
+            }
+
+            Console.WriteLine("O valor total da compra é: R$ " + total);
+        }
+    }
+}
