@@ -1,0 +1,31 @@
+using System;
+
+namespace exer
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o total de eleitores: ");
+            int eleitores = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o total de votos brancos ");
+            int brancos = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o total de votos nulos: ");
+            int nulos = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o total de votos válios: ");
+            int validos = int.Parse(Console.ReadLine());
+
+            double totalBrancos = ((double)brancos / eleitores * 100);
+            double totalNulos = ((double)nulos / eleitores * 100);
+            double totalValidos = ((double)validos / eleitores * 100);
+
+            Console.WriteLine($"A porcentagem dos votos brancos seria: {totalBrancos:F2}%");
+            Console.WriteLine($"A porcentagem dos votos nulos seria: {totalNulos:F2}%");
+            Console.WriteLine($"A porcentagem dos votos válidos seria: {totalValidos:F2}%");
+
+        }
+    }
+}
